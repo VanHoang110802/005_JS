@@ -36,9 +36,9 @@ else {
 //     console.log("Phương trình có nghiệm:", x);
 // }
 
-// var canNang = prompt("Vui long nhap so kg: ");
-// var chieuCao = prompt("Vui long nhap chieu cao: ");
-// var chiSoBMI = canNang / (chieuCao * chieuCao);
+ var canNang = prompt("Vui long nhap so kg: ");
+ var chieuCao = prompt("Vui long nhap chieu cao: ");
+ var chiSoBMI = canNang / (chieuCao * chieuCao);
 
 if(chiSoBMI < 18.5)
 {
