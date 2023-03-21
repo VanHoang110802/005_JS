@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="test.js">
+    <title>QUẢN LÍ MÁY BAY</title>
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <div class="logo-header">
+                <a href="#header" href="index.html" onclick="alert('Xin chờ 1 chút ahihi...')">
+                    <img src="./img/logo-white.png" alt="" >
+                    
+                </a>
+            </div>
+            <div class="menu-right">
+                <ul class="header-menu">
+                    <li><a href="#" class="active">TÌM KIẾM CHUYẾN BAY</a></li>
+
+                    <li><a href="#">GIỚI THIỆU</a>
+                        <ul class="about-menu">
+                            <li><a href="./overview.html">Tổng quan</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">BLOG</a></li>
+
+                    <li><a href="#lienhe" onclick="alert('Xin chờ 1 chút ahihi...')">LIÊN HỆ</a>
+                    
+                    </li>
+
+                    <li><a href="./login.html">ĐẶT VÉ</a> </li>
+                    
+                    <li><a href="./login.html">SIGN IN</a> </li>
+
+                    <li><a href="./signup.html">SIGN UP</a> </li>
+                    <!-- <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li> -->
+                </ul>
+            </div>
+        </div>        
+        <!-- header ends -->
+
+        <!-- slider -->
+        <div class="slider">
+            <div class="slider-booking">
+                
+                <div class="form">
+                    <div class="form-radio">
+                        <label for="">
+                            <input type="radio" class="radio-custom">
+                            <span> Khứ hồi </span>
+                        </label>
+                        <label for="">
+                            <input type="radio" class="radio-custom">
+                            <span> Một chiều </span>
+                        </label>
+                        
+                    </div>
+                    <div class="form-checkput">
+                        <label for="" class="line">
+                            <input type="checkbox" class="checkbox-custom">
+                            <span>Chỉ duy nhất chuyến bay thẳng</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="where">
+                    <div class="where-form">
+                        <div class="from-box">
+                            <label for="" class="form">Điểm khởi hành</label>
+                            <div class="option">
+                                <select name="" id="">
+                                    <option value="" class="bg-from">Ho Chi Minh(SGN) - Tan Son Nhat Airport</option>
+                                    <option value="">Ha Noi(HAN) - Noibai Airport</option>
+                                    <option value="">Buon Ma Thuot(BMV) - Buon Ma Thuot Airport</option>
+                                    <option value="">Can Tho(VCA) - Tra Noc Airport</option>
+                                    <option value="">Chu Lai(VCL) - Chu Lai Airport</option>
+                                    <option value="">Da Lat(DLI) - Lien Khuong Airport</option>
+                                    <option value="">Da Nang(DAD) - Da Nang Airport</option>
+                                    <option value="">Dong Hoi(VDH) - Dong Hoi Airport</option>
+                                    <option value="">Hai Phong(HPH) - Cat Bi Airport</option>
+                                    <option value="">Hue(HUI) - Phu Bai Airport</option>
+                                    <option value="">Nha Trang(CXR) - Cam Ranh Airport</option>
+                                    <option value="">Phu Quoc(PQC) - Phu Quoc Airport</option>
+                                    <option value="">Pleiku(PXU) - Pleiku Airport</option>
+                                    <option value="">Quy Nhon(UIH) - Phu Cat Airport</option>
+                                    <option value="">Thanh Hoa(THD) - Tho Xuan Airport</option>
+                                    <option value="">Van Don(VDO) - Van Don International Airport</option>
+                                    <option value="">Vinh(VII) - Vinh International Airport</option>
+                                </select>
+                            </div>
+                            <label for="" class="line">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span style="color: #ffffff;">Thêm các chuyến bay lân cận</span>
+                            </label>
+                        </div>
+                        <div class="from-box">
+                            <label for="" class="form">To</label>
+                            <div class="option">
+                                <select name="" id="">
+                                    <option value="" class="bg-from">Ho Chi Minh(SGN) - Tan Son Nhat Airport</option>
+                                    <option value="">Ha Noi(HAN) - Noibai Airport</option>
+                                    <option value="">Buon Ma Thuot(BMV) - Buon Ma Thuot Airport</option>
+                                    <option value="">Can Tho(VCA) - Tra Noc Airport</option>
+                                    <option value="">Chu Lai(VCL) - Chu Lai Airport</option>
+                                    <option value="">Da Lat(DLI) - Lien Khuong Airport</option>
+                                    <option value="">Da Nang(DAD) - Da Nang Airport</option>
+                                    <option value="">Dong Hoi(VDH) - Dong Hoi Airport</option>
+                                    <option value="">Hai Phong(HPH) - Cat Bi Airport</option>
+                                    <option value="">Hue(HUI) - Phu Bai Airport</option>
+                                    <option value="">Nha Trang(CXR) - Cam Ranh Airport</option>
+                                    <option value="">Phu Quoc(PQC) - Phu Quoc Airport</option>
+                                    <option value="">Pleiku(PXU) - Pleiku Airport</option>
+                                    <option value="">Quy Nhon(UIH) - Phu Cat Airport</option>
+                                    <option value="">Thanh Hoa(THD) - Tho Xuan Airport</option>
+                                    <option value="">Van Don(VDO) - Van Don International Airport</option>
+                                    <option value="">Vinh(VII) - Vinh International Airport</option>
+                                </select>
+                            </div>
+                            <label for="" class="line">
+                                <input type="checkbox" class="checkbox-custom">
+                                <span style="color: #ffffff;">Thêm sân bay lân cận</span>
+                            </label>
+                        </div>
+                        <div class="from-box">
+                            <label for="" class="form">Hạng ghế</label>
+                            <div class="option">
+                                <select name="" id="cabin">
+                                    <option value="" class="bg-from">Ghế hạng nhất (First Class)</option>
+                                    <option value="">Ghế hạng Thương gia (Business Class)</option>
+                                    <option value="">Ghế hạng Phổ thông đặc biệt (Premium Class, Deluxe Economy Class, Comfort Class)</option>
+                                    <option value="">Ghế hạng Phổ thông (Economy Class)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hei">
+                    <div class="input-box">
+                        <label for="" class="form">Khởi hành</label>
+                        <div class="last">
+                            <input type= "date">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="" class="form">Trở về</label>
+                        <div class="last">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="input-box after">
+                        <label for="" class="form">Người lớn (16+)</label>
+                        <div class="last">
+                            <input type="number" class="after">
+                        </div>
+                    </div>
+                    <div class="input-box after">
+                        <label for="" class="form">Trẻ em</label>
+                        <div class="last">
+                            <input type="number" class="after">
+                        </div>
+                    </div>
+                    <div class="input-box after">
+                        <div class="last button">
+                            <button>Search Flight</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider ends -->
+
+        <!-- firm -->
+        <div class="firm">
+            <div class="band">
+                <div class="owl-item">
+                    <a href="#">
+                        <img src="./img/logo-14.png" alt="" width="107px" height="74px">
+                    </a>
+                </div>
+                <div class="owl-item">
+                    <a href="#">
+                        <img src="./img/logo-15.png" alt="" width="190px" height="17px">
+                    </a>
+                </div>
+                <div class="owl-item">
+                    <a href="#">
+                        <img src="./img/logo-16.png" alt="">
+                    </a>
+                </div>
+                <div class="owl-item">
+                    <a href="#">
+                        <img src="./img/logo-17.png" alt="">
+                    </a>
+                </div>
+                <div class="owl-item">
+                    <a href="#">
+                        <img src="./img/logo-18.png" alt="">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- firm ends -->
+
+
+        <!-- why -->
+        <div class="why">
+            <div class="title-why">
+                <h3 class="title">Tại sao mọi người chọn chúng tôi</h3>
+                <h2 class="title-our">Lợi thế của chúng tôi</h2>
+            </div>
+            <div class="why-box">
+                <a href="#">
+                    <img src="./img/hinh-anh-may-bay-dep.jpg" alt="">
+                </a>
+                <h5>The Most Reliable <br> Airlines</h5>
+                <p>120+ Đường bay nội địa, quốc tế và 400+ Chuyến bay mỗi ngày. Tàu bay mới hiện đại, bảo vệ môi trường</p>
+            </div>
+            <div class="why-box">
+                <a href="#">
+                    <img src="./img/3343063_ghe-may-bay.jpg" alt="">
+                </a>
+                <h5>The Most Reliable <br> Airlines</h5>
+                <p>Chúng tôi luôn nỗ lực cung cấp những dịch vụ đặc biệt, có những nhân viên thân thiện, tận tình.</p>
+            </div>
+            <div class="why-box">
+                <a href="#">
+                    <img src="./img/imager_6287.jpg" alt="">
+                </a>
+                <h5>The Most Reliable <br> Airlines</h5>
+                <p>Hành khách sẽ có thể tận hưởng sự thoải mái trong suốt hành trình. Chúng tôi không ngừng nỗ lực hoàn thiện các dịch vụ với mong muốn đem lại cho hành khách những chuyến bay an toàn và trọn vẹn nhất.</p>
+            </div>
+            <div class="why-box">
+                <a href="#">
+                    <img src="./img/images.jpg" alt="">
+                </a>
+                <h5>The Most Reliable <br> Airlines</h5>
+                <p>Chúng tôi chỉ hợp tác với các hãng hàng không đáng tin cậy nhất, những người có thể tự hào về danh tiếng hoàn hảo.</p>
+            </div>
+
+        </div>
+        <!-- why ends -->
+
+
+        <!-- support -->
+        <div class="support">
+            <h3 class="title-support">HỖ TRỢ 24/7</h3>
+            <p>Dịch vụ hỗ trợ của chúng tôi hoạt động 24 giờ một ngày, 7 ngày <br> một
+                tuần để giúp bạn mua vé 1 cách hiệu quả nhất.</p>
+           
+        </div>
+        <!-- support ends -->
+        
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer_1">
+                    <div class="logo-footer">
+                        <a href="#">
+                            <img src="./img/logo-white.png" alt="">
+                        </a>
+                    </div>
+                    <p>SkyBooking SkyBooking là một công cụ tìm kiếm du lịch ngay lập tức tìm kiếm tất cả các chuyến bay, xe buýt và tàu hỏa có sẵn trên một số lượng lớn các trang web du lịch như đại lý du lịch trực tuyến, các hãng hàng không lớn và chi phí thấp và các nhà điều hành tour du lịch. Chúng tôi cũng so sánh phòng khách sạn và giao dịch cho thuê xe. Bạn có thể dễ dàng thu hẹp tìm kiếm của mình nhiều (hoặc ít!) tùy thích. Điều đó có nghĩa là nếu chuyến đi bạn muốn ở bất cứ đâu ngoài kia, bạn sẽ tìm thấy nó ngay lập tức.</p>
+                </div>
+                <div class="footer_1">
+                    <h5 id = "lienhe" class="text-bold">## Liên hệ với chúng tôi 📫:</h5>
+                    <div class="container">
+                        
+                        <p>
+                          <a href="https://www.facebook.com/vanhoang0802" alt="Facebook">
+                            <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" target="_blank" width="100px" />
+                          </a> 
+                          <a href="https://github.com/VanHoang110802" alt="Github">
+                            <img src="https://img.icons8.com/fluent/48/000000/github.png" width="100px"/>
+                          </a> 
+                          <a href="https://www.youtube.com/channel/UCIMZK1H6NV8qYBjbWT_ryhQ" alt="Youtube channel" target="_blank" >
+                            <img src="https://img.icons8.com/fluent/48/000000/youtube-play.png" width="100px"/>
+                          </a>
+                          <a href="mailto:tvh110802@gmail.com" alt="Email">
+                            <img src="https://img.icons8.com/fluent/48/000000/mailing.png" width="100px"/>
+                          </a>
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="footer_1 what">
+                    <h5 class="text-bold">Bài đăng trên blog mới nhất</h5>
+                    <p>
+                        <q>“I must tell you how impressed I am by your customer service. I have contacted you twice now and each time I received a prompt reply plus the additional attention of a manager. I have never received this kind of response from any other airline tickets booking site.”</q>
+                    </p>
+                    <p><cite>Phillip Holland</cite></p>
+                    <div class="owl-dots">
+                        <div class="owl-dot active">
+                            <span></span>
+                        </div>
+                        <div class="owl-dot">
+                            <span></span>
+                        </div>
+                        <div class="owl-dot">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_1 send">
+                    <h5 class="text-bold">Bài đăng trên blog:</h5>
+                    <form action="" class="send-mail">
+                        <h5>Email</h5>
+                        <input type="text" />
+                        <h5>Number</h5>
+                        <input type="text" >
+                        <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                    </form>
+                    <button class="button-send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
