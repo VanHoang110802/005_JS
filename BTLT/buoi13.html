@@ -49,16 +49,18 @@
   <form action="#">
     <table>
       <tr>
-        <td class="tdLabel"><label for="register_name" class="label">Nhập vào họ tên:</label> <span class="test"></span>
+        <td class="tdLabel"><label for="" class="label">Nhập vào họ tên:</label> <span class="test"></span>
         </td>
 
-        <td><input type="text" name="name" value="" id="register_name" /></td>
+        <td> <input onchange="checkName()" type="text" name="name" value="" id="register_name" /> <br> <span class="thongBaoSpan" ></span> </td>
+        
 
       </tr>
+      
       <tr>
-        <td class="tdLabel"><label for="register_number" class="label">Nhập vào số điện thoại:</label> <span
+        <td class="tdLabel"><label for="" class="label">Nhập vào số điện thoại:</label> <span
             class="test1"></span> </td>
-        <td><input type="text" name="number" id="register_number" /></td>
+        <td><input onchange="checkNumber()" type="text" name="number" id="register_number" /> <br> <span class="thongBaoSDT" ></span>  </td>
       </tr>
       <tr>
         <td class="tdLabel"><label for="register_email" class="label">Nhập vào Email:</label> <span
@@ -70,7 +72,7 @@
         <td>
           <input type="radio" name="gender" id="register_gendermale" value="nam" />
           <label for="register_gendermale">nam</label>
-          <input type="radio" name="gender" id="register_genderfemale" value="nu" />
+          <input type="radio" name="gender" id="register_genderfemale" value="nữ" />
           <label for="register_genderfemale">nữ</label>
         </td>
       </tr>
@@ -89,8 +91,8 @@
       <tr>
         <td>
 
-          <input onclick="myButtonTest()" type="button" value="Submit">
-
+          <input onclick="myButtonTest()" type="button" value="Submit" class="label1">
+          <input onclick="myButtonReset()" type="button" value="Reset" class="label1">
 
         </td>
       </tr>
