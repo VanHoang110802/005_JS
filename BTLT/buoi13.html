@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="buoi13.css">
+  <title> BUỔI 13 </title>
+
+</head>
+
+<body>
+  <!-- <h1>
+        ahihi
+        
+    </h1>
+    <div>
+       
+    
+        <label for="" > Nhập vào email </label>
+        <span class="test">(*)</span>
+        <span class="thongBao"></span>
+        <input type="text" id="mail" class="a">
+        <button onclick="myButtonEmail()"> Submit </button>
+    
+        <br>
+    
+        <label for=""> Nhập vào sđt </label>
+        <span class="testThongBao">(*)</span>
+        <span class="thongBao1"></span>
+        <input type="text" id="sdt" class="a1">
+        <button onclick="myButtonSDT()"> Submit </button>
+    </div> -->
+  <!-- <form>
+        <label for="name">Họ và tên:</label><br>
+        <span class="test">(*)</span>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <span class="test">(*)</span>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Mật khẩu:</label><br>
+        <span class="test">(*)</span>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Đăng ký">
+      </form>  -->
+
+
+  <form action="#">
+    <table>
+      <tr>
+        <td class="tdLabel"><label for="register_name" class="label">Nhập vào họ tên:</label> <span class="test"></span>
+        </td>
+
+        <td><input type="text" name="name" value="" id="register_name" /></td>
+
+      </tr>
+      <tr>
+        <td class="tdLabel"><label for="register_number" class="label">Nhập vào số điện thoại:</label> <span
+            class="test1"></span> </td>
+        <td><input type="text" name="number" id="register_number" /></td>
+      </tr>
+      <tr>
+        <td class="tdLabel"><label for="register_email" class="label">Nhập vào Email:</label> <span
+            class="test2"></span> </td>
+        <td><input type="email" name="email" value="" id="register_email" /></td>
+      </tr>
+      <tr>
+        <td class="tdLabel"><label for="register_gender" class="label">Giới tính:</label> </td>
+        <td>
+          <input type="radio" name="gender" id="register_gendermale" value="nam" />
+          <label for="register_gendermale">nam</label>
+          <input type="radio" name="gender" id="register_genderfemale" value="nu" />
+          <label for="register_genderfemale">nữ</label>
+        </td>
+      </tr>
+      <tr>
+        <td class="tdLabel"><label for="register_country" class="label">Vui lòng chọn quốc tịch:</label></td>
+        <td>
+          <select name="country" id="register_country" class="label">
+            <option value="Vietnam" id="Vietnam">Vietnam</option>
+            <option value="China" id="China">China</option>
+            <option value="United States" id="United States">United States</option>
+            <option value="Russia" id="Russia">Russia</option>
+            <option value="Other" id="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <input onclick="myButtonTest()" type="button" value="Submit">
+
+
+        </td>
+      </tr>
+
+    </table>
+  </form>
+  <br>
+  <td>
+    <table id="ketqua" border="1"></table>
+  </td>
+</body>
+<script src="sweetalert.js"></script>
+<script src="buoi13.js"></script>
+
+</html>
