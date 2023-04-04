@@ -14,6 +14,49 @@
 
 let arrLuuTru = ["", "" , "", "" , ""]; 
 
+function checkName()
+{
+    let checkTen = document.getElementById('register_name').value;
+    let thongBaoSpan = document.getElementsByClassName('thongBaoSpan');
+    let checkKiTuSo = false;
+    
+    for(let i=0;i<checkTen.length;++i)
+    {
+        if(checkTen[i] >= '0' && checkTen[i] <= '9')
+        {
+            checkKiTuSo = true;
+            break;
+        }
+    }
+    
+    if(checkKiTuSo)
+    {
+        document.getElementById('register_name').style.borderColor = 'red';
+        thongBaoSpan[0].innerHTML = "*Nhập không hợp lệ. Xin kiểm tra lại!!";
+    }
+    else 
+    {
+        document.getElementById('register_name').style.borderColor = 'black';
+        thongBaoSpan[0].innerHTML = "";
+    }
+}
+
+function checkNumber()
+{
+    let checkTen = document.getElementById('register_number').value;
+    let thongBaoSDT = document.getElementsByClassName('thongBaoSDT');
+    if(isNaN(checkTen))
+    {
+        document.getElementById('register_number').style.borderColor = 'red';
+        thongBaoSDT[0].innerHTML = "Nhập không hợp lệ. Xin kiểm tra lại!!";
+    }
+    else
+    {
+        document.getElementById('register_number').style.borderColor = 'black';
+        thongBaoSDT[0].innerHTML = "";
+    }
+}
+
 function myButtonTest()
 {
     let arr = document.getElementsByTagName('input');
@@ -100,12 +143,20 @@ function myButtonTest()
     //     return;
     // }
 
-    // if(name != "" && sdt != "" && mail != "")
-    // {
+     if(name != "" && sdt != "" && mail != "")
+     {
         
        // window.location.href = "buoi13_1.html";
-
-    // }
+      
+        swal("Đăng kí thành công!!", "", "success");
+        
+     }
+     else 
+     {
+        swal("Đăng kí không thành công!!", "Xin lưu ý: (*) là phần bắt buộc phải điền thông tin", "error");
+        document.getElementById('ketqua').innerHTML = "";
+        return;
+     }
     // Tạo 1 chuỗi chính là bảng HTML
     let result = 
     `<tr>
@@ -114,7 +165,7 @@ function myButtonTest()
        
     </tr>
     <tr>
-        <td>Tuổi</td>
+        <td>Số điện thọai</td>
         <td>${arrLuuTru[1]}</td>
     </tr>
     <tr>
@@ -134,15 +185,10 @@ function myButtonTest()
         
 }
 
-function myButton2()
+function myButtonReset()
 {
-    let a = document.getElementsByClassName('test69');
-    
-    for(let i=0;i<arrLuuTru.length;++i)
-    {
-        a[i] = arrLuuTru[i];
-        a[i].innerHTML = arrLuuTru[i];
-    }
+    document.getElementsByTagName('form')[0].reset();
+    document.getElementById('ketqua').innerHTML = "";
 }
 
 // function myButtonEmail() {
