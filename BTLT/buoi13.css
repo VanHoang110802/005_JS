@@ -1,0 +1,19 @@
+.spanHoten
+{
+    margin-right: 70px;
+}
+.thongBaoName, .thongBaoSDT, .thongBaoCMT, .thongBaoEmail, .thongBaoChuyenBay, .thongBaoNTN, .thongBaoHanhLy, .thongBaoGioiTinh
+{
+    
+    color: red;
+}
+
+.label
+{
+     width:250px; 
+}
+
+.label1
+{
+    width:250px;
+}
