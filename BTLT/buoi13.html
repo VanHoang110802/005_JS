@@ -11,64 +11,68 @@
 </head>
 
 <body>
-  <!-- <h1>
-        ahihi
-        
-    </h1>
-    <div>
-       
-    
-        <label for="" > Nhập vào email </label>
-        <span class="test">(*)</span>
-        <span class="thongBao"></span>
-        <input type="text" id="mail" class="a">
-        <button onclick="myButtonEmail()"> Submit </button>
-    
-        <br>
-    
-        <label for=""> Nhập vào sđt </label>
-        <span class="testThongBao">(*)</span>
-        <span class="thongBao1"></span>
-        <input type="text" id="sdt" class="a1">
-        <button onclick="myButtonSDT()"> Submit </button>
-    </div> -->
-  <!-- <form>
-        <label for="name">Họ và tên:</label><br>
-        <span class="test">(*)</span>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <span class="test">(*)</span>
-        <input type="email" id="email" name="email"><br>
-        <label for="password">Mật khẩu:</label><br>
-        <span class="test">(*)</span>
-        <input type="password" id="password" name="password"><br><br>
-        <input type="submit" value="Đăng ký">
-      </form>  -->
-
-
   <form action="#">
-    <table>
+    <table style="margin: auto;" border="1">
       <tr>
-        <td class="tdLabel"><label for="" class="label">Nhập vào họ tên:</label> <span class="test"></span>
+
+        <td class="tdLabel"> <label for="" class="label"> Nhập vào họ tên: <br> </label> <span class="thongBaoName">
+          </span> </td>
+
+        <td> <input type="text" name="name" value="" id="register_name" class="label" /> <span class="label"></span>
         </td>
 
-        <td> <input onchange="checkName()" type="text" name="name" value="" id="register_name" /> <br> <span class="thongBaoSpan" ></span> </td>
-        
+      </tr>
 
-      </tr>
-      
       <tr>
-        <td class="tdLabel"><label for="" class="label">Nhập vào số điện thoại:</label> <span
-            class="test1"></span> </td>
-        <td><input onchange="checkNumber()" type="text" name="number" id="register_number" /> <br> <span class="thongBaoSDT" ></span>  </td>
+        <td class="tdLabel"><label for="" class="label"> Nhập vào số điện thoại: <br> </label> <span
+            class="thongBaoSDT"></span> </td>
+
+        <td><input type="text" name="number" id="register_number" class="label" /> <br> <span class="label"></span>
+        </td>
       </tr>
+
       <tr>
-        <td class="tdLabel"><label for="register_email" class="label">Nhập vào Email:</label> <span
-            class="test2"></span> </td>
-        <td><input type="email" name="email" value="" id="register_email" /></td>
+        <td class="tdLabel"><label for="register_cmt" class="label"> Nhập vào chứng minh thư: <br> </label> <span
+            class="thongBaoCMT"></span> </td>
+        <td><input type="text" name="cmt" value="" id="register_cmt" class="label" /></td>
       </tr>
+
       <tr>
-        <td class="tdLabel"><label for="register_gender" class="label">Giới tính:</label> </td>
+        <td class="tdLabel"><label for="register_email" class="label"> Nhập vào Email: <br> </label> <span
+            class="thongBaoEmail"></span> </td>
+        <td><input type="email" name="email" value="" id="register_email" class="label" /></td>
+      </tr>
+
+      <tr>
+        <td class="tdLabel"><label for="register_chuyenBay" class="labelChuyenBay"> Vui lòng chọn chuyến bay: <br>
+          </label> <span class="thongBaoChuyenBay"></span> </td>
+        <td>
+          <select name="chuyenBay" id="register_chuyenBay" class="luaChonChuyenBay">
+            <option value="" id="">------------------- Lựa chọn -------------------</option>
+            <option value="Vietnam" id="Vietnam">Vietnam</option>
+            <option value="China" id="China">China</option>
+            <option value="United States" id="United States">United States</option>
+            <option value="Russia" id="Russia">Russia</option>
+            <option value="Other" id="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="tdLabel"><label for="register_ngaySinh" class="label"> Ngày tháng năm sinh: <br> </label> <span
+            class="thongBaoNTN"></span> </td>
+        <td><input type="date" name="ngaySinh" value="" id="register_ngaySinh" class="label" /></td>
+      </tr>
+
+      <tr>
+        <td class="tdLabel"><label for="register_hanhLy" class="label"> Hành lý: <br> </label> <span
+            class="thongBaoHanhLy"></span></td>
+        <td><input type="text" name="hanhLy" value="" id="register_hanhLy" class="label" /></td>
+      </tr>
+
+
+      <tr>
+        <td class="tdLabel"><label for="register_gender" class="label"> Giới tính: <br> </label> <span class="thongBaoGioiTinh"></span> </td>
         <td>
           <input type="radio" name="gender" id="register_gendermale" value="nam" />
           <label for="register_gendermale">nam</label>
@@ -77,9 +81,11 @@
         </td>
       </tr>
       <tr>
-        <td class="tdLabel"><label for="register_country" class="label">Vui lòng chọn quốc tịch:</label></td>
+        <td class="tdLabel"><label for="register_QuocTich" class="labelQuocTich"> Vui lòng chọn quốc tịch: <br>
+          </label> <span class="thongBaoQuocTich"></span> </td>
         <td>
-          <select name="country" id="register_country" class="label">
+          <select name="quocTich" id="register_QuocTich" class="luaChonQuocTich">
+            <option value="" id="">------------------- Lựa chọn -------------------</option>
             <option value="Vietnam" id="Vietnam">Vietnam</option>
             <option value="China" id="China">China</option>
             <option value="United States" id="United States">United States</option>
@@ -91,8 +97,12 @@
       <tr>
         <td>
 
-          <input onclick="myButtonTest()" type="button" value="Submit" class="label1">
-          <input onclick="myButtonReset()" type="button" value="Reset" class="label1">
+          <input onclick="myButtonReset()" type="button" value="Reset" class="label">
+
+        </td>
+        <td>
+
+          <input onclick="myButtonSubmit()" type="button" value="Submit" class="label">
 
         </td>
       </tr>
