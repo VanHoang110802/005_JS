@@ -179,22 +179,22 @@ function myButtonSubmit() {
     }
 
     // quoc tich
-    let thongBaoQuocTich = document.getElementsByClassName('thongBaoQuocTich');
-    let lcQuocTich = document.getElementsByClassName('luaChonQuocTich');
-    let qt = lcQuocTich[0].value;
+    let thongBaoThanhToan = document.getElementsByClassName('thongBaoThanhToan');
+    let lcThanhToan = document.getElementsByClassName('luaChonThanhToan');
+    let qt = lcThanhToan[0].value;
 
     if (qt == "" || qt == null) {
-        thongBaoQuocTich[0].innerHTML = "(*)Thông tin không được để trống.";
+        thongBaoThanhToan[0].innerHTML = "(*)Thông tin không được để trống.";
         return;
     }
     else {
-        thongBaoQuocTich[0].innerHTML = "";
+        thongBaoThanhToan[0].innerHTML = "";
     }
 
     // Tạo 1 chuỗi chính là bảng HTML
     let result =
         `
-        <tr style="font-size: 20px;">
+        <tr style="font-size: 18px;">
      <td>Họ tên</td>
      <td>Số điện thọai</td>
      <td>Chứng minh thư</td>
@@ -203,9 +203,9 @@ function myButtonSubmit() {
      <td>Ngày tháng năm sinh</td>
      <td>Hành lý</td>
      <td>Giới tính</td>
-     <td>Quốc tịch</td>
+     <td>Thanh toán</td>
     </tr>
-    <tr style="font-size: 20px;">
+    <tr style="font-size: 18px;">
     <td>${getName}</td>
     <td>${getSDT}</td>
     <td>${getCMT}</td>
