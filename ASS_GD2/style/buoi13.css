@@ -1,0 +1,41 @@
+
+.spanHoten
+{
+    margin-right: 70px;
+}
+.thongBaoName, .thongBaoSDT, .thongBaoCMT, .thongBaoEmail, .thongBaoChuyenBay, .thongBaoNTN, .thongBaoHanhLy, .thongBaoGioiTinh, .thongBaoQuocTich
+{
+    
+    color: red;
+}
+
+.labelInput
+{
+    width:545px;
+    font-size: 18px;
+    background: none;
+}
+.luaChonThanhToan
+{
+    width:550px;
+}
+.luaChonChuyenBay
+{
+    width: 550px;
+}
+.labelbtnReset
+{
+    margin-left: 60px;
+}
+.labelbtnSubmit
+{
+    margin-left: 230px;
+}
+.inputSex
+{
+    margin-left: 70px;
+}
+.inputSex1
+{
+    margin-left: 70px;
+}
