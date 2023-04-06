@@ -1,19 +1,42 @@
+form
+{
+    margin-top: 10vh;
+}
 .spanHoten
 {
     margin-right: 70px;
 }
-.thongBaoName, .thongBaoSDT, .thongBaoCMT, .thongBaoEmail, .thongBaoChuyenBay, .thongBaoNTN, .thongBaoHanhLy, .thongBaoGioiTinh
+.thongBaoName, .thongBaoSDT, .thongBaoCMT, .thongBaoEmail, .thongBaoChuyenBay, .thongBaoNTN, .thongBaoHanhLy, .thongBaoGioiTinh, .thongBaoQuocTich
 {
     
     color: red;
 }
 
-.label
+.labelInput
 {
-     width:250px; 
+    width:545px;
 }
-
-.label1
+.luaChonQuocTich
 {
-    width:250px;
+    width:550px;
+}
+.luaChonChuyenBay
+{
+    width: 550px;
+}
+.labelbtnReset
+{
+    margin-left: 60px;
+}
+.labelbtnSubmit
+{
+    margin-left: 230px;
+}
+.inputSex
+{
+    margin-left: 70px;
+}
+.inputSex1
+{
+    margin-left: 70px;
 }
