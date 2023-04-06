@@ -12,46 +12,45 @@
 
 <body>
   <form action="#">
-    <table style="margin: auto;" border="1">
+    <h1 style="text-align: center;">ĐĂNG KÍ THÔNG TIN</h1>
+    <table style="margin: auto;" border="3" >
       <tr>
 
-        <td class="tdLabel"> <label for="" class="label"> Nhập vào họ tên: <br> </label> <span class="thongBaoName">
-          </span> </td>
+        <td> <label for="" class="label" style="font-size: 16px;"> Nhập vào họ tên: <br> </label> <span class="thongBaoName"> </span> </td>
 
-        <td> <input type="text" name="name" value="" id="register_name" class="label" /> <span class="label"></span>
-        </td>
+        <td> <input type="text" name="name" value="" id="register_name" class="labelInput" style="font-size: 24px;"/>  <span class="label" ></span> </td>
 
       </tr>
 
       <tr>
-        <td class="tdLabel"><label for="" class="label"> Nhập vào số điện thoại: <br> </label> <span
+        <td><label for="" class="label"> Nhập vào số điện thoại: <br> </label> <span
             class="thongBaoSDT"></span> </td>
 
-        <td><input type="text" name="number" id="register_number" class="label" /> <br> <span class="label"></span>
+        <td><input type="text" name="number" id="register_number" class="labelInput" style="font-size: 24px;"/> <br> <span class="label"></span>
         </td>
       </tr>
 
       <tr>
-        <td class="tdLabel"><label for="register_cmt" class="label"> Nhập vào chứng minh thư: <br> </label> <span
+        <td><label for="register_cmt" class="label"> Nhập vào chứng minh thư: <br> </label> <span
             class="thongBaoCMT"></span> </td>
-        <td><input type="text" name="cmt" value="" id="register_cmt" class="label" /></td>
+        <td><input type="text" name="cmt" value="" id="register_cmt" class="labelInput" style="font-size: 24px;"/></td>
       </tr>
 
       <tr>
-        <td class="tdLabel"><label for="register_email" class="label"> Nhập vào Email: <br> </label> <span
+        <td><label for="register_email" class="label"> Nhập vào Email: <br> </label> <span
             class="thongBaoEmail"></span> </td>
-        <td><input type="email" name="email" value="" id="register_email" class="label" /></td>
+        <td><input type="email" name="email" value="" id="register_email" class="labelInput" style="font-size: 24px;"/></td>
       </tr>
 
       <tr>
-        <td class="tdLabel"><label for="register_chuyenBay" class="labelChuyenBay"> Vui lòng chọn chuyến bay: <br>
+        <td><label for="register_chuyenBay" class="labelChuyenBay"> Vui lòng chọn chuyến bay: <br>
           </label> <span class="thongBaoChuyenBay"></span> </td>
         <td>
-          <select name="chuyenBay" id="register_chuyenBay" class="luaChonChuyenBay">
-            <option value="" id="">------------------- Lựa chọn -------------------</option>
-            <option value="Tp. Hồ Chí Minh - SGN - Sân bay Tân Sơn Nhất" id="1">Tp. Hồ Chí Minh - SGN - Sân bay Tân Sơn Nhất</option>
-            <option value="Hà Nội - HAN - Sân bay Nội Bài" id="2">Hà Nội - HAN - Sân bay Nội Bài</option>
-            <option value="Buôn Ma Thuột - BMV - Sây bay Buôn Ma Thuột" id="3">Buôn Ma Thuột - BMV - Sây bay Buôn Ma Thuột</option>
+          <select name="chuyenBay" id="register_chuyenBay" class="luaChonChuyenBay" style="font-size: 24px;">
+            <option value="" id="">---------------------- Lựa chọn ----------------------</option>
+            <option value="Tp. Hồ Chí Minh - SGN - Sân bay Tân Sơn Nhất" id="1" style="font-size: 24px;">Tp. Hồ Chí Minh - SGN - Sân bay Tân Sơn Nhất</option>
+            <option value="Hà Nội - HAN - Sân bay Nội Bài" id="2" style="font-size: 24px;">Hà Nội - HAN - Sân bay Nội Bài</option>
+            <option value="Buôn Ma Thuột - BMV - Sây bay Buôn Ma Thuột" id="3" style="font-size: 24px;">Buôn Ma Thuột - BMV - Sây bay Buôn Ma Thuột</option>
             <option value="Cần Thơ - VCA - Sân bay Trà Nóc" id="4">Cần Thơ - VCA - Sân bay Trà Nóc</option>
             <option value="Chu Lai - VCL - Sân bay Chu Lai" id="5">Chu Lai - VCL - Sân bay Chu Lai</option>
             <option value="Đà Lạt - DLI - Sân bay Liên Khương" id="6">Đà Lạt - DLI - Sân bay Liên Khương</option>
@@ -67,50 +66,50 @@
       </tr>
 
       <tr>
-        <td class="tdLabel"><label for="register_ngaySinh" class="label"> Ngày tháng năm sinh: <br> </label> <span
+        <td><label for="register_ngaySinh" class="label"> Ngày tháng năm sinh: <br> </label> <span
             class="thongBaoNTN"></span> </td>
-        <td><input type="date" name="ngaySinh" value="" id="register_ngaySinh" class="label" /></td>
+        <td><input type="date" name="ngaySinh" value="" id="register_ngaySinh" class="labelInput" style="font-size: 20px;" /></td>
       </tr>
 
       <tr>
-        <td class="tdLabel"><label for="register_hanhLy" class="label"> Hành lý: <br> </label> <span
+        <td><label for="register_hanhLy" class="label"> Hành lý: <br> </label> <span
             class="thongBaoHanhLy"></span></td>
-        <td><input type="text" name="hanhLy" value="" id="register_hanhLy" class="label" /></td>
+        <td><input type="text" name="hanhLy" value="" id="register_hanhLy" class="labelInput" style="font-size: 24px;"/></td>
       </tr>
 
 
       <tr>
-        <td class="tdLabel"><label for="register_gender" class="label"> Giới tính: <br> </label> <span class="thongBaoGioiTinh"></span> </td>
+        <td><label for="register_gender" class="labelInput"> Giới tính: <br> </label> <span class="thongBaoGioiTinh"></span> </td>
         <td>
-          <input type="radio" name="gender" id="register_gendermale" value="nam" />
+          <input type="radio" name="gender" id="register_gendermale" value="nam" class="inputSex" style="font-size: 29px;"/>
           <label for="register_gendermale">nam</label>
-          <input type="radio" name="gender" id="register_genderfemale" value="nữ" />
+          <input type="radio" name="gender" id="register_genderfemale" value="nữ" class="inputSex1" style="font-size: 29px;"/>
           <label for="register_genderfemale">nữ</label>
         </td>
       </tr>
       <tr>
-        <td class="tdLabel"><label for="register_QuocTich" class="labelQuocTich"> Vui lòng chọn quốc tịch: <br>
-          </label> <span class="thongBaoQuocTich"></span> </td>
+        <td><label for="register_QuocTich" class="labelQuocTich" > Vui lòng chọn quốc tịch: <br>
+          </label> <span class="thongBaoQuocTich" ></span> </td>
         <td>
-          <select name="quocTich" id="register_QuocTich" class="luaChonQuocTich">
-            <option value="" id="">------------------- Lựa chọn -------------------</option>
-            <option value="Vietnam" id="Vietnam">Viet Nam</option>
-            <option value="China" id="China">China</option>
-            <option value="United States" id="United States">United States</option>
-            <option value="Russia" id="Russia">Russia</option>
-            <option value="Other" id="Other">Other</option>
+          <select name="quocTich" id="register_QuocTich" class="luaChonQuocTich" style="font-size: 24px;">
+            <option value="" id="" style="font-size: 24px;">---------------------- Lựa chọn ----------------------</option>
+            <option value="Viet Nam" id="Vietnam" style="font-size: 24px;">Viet Nam</option>
+            <option value="China" id="China" style="font-size: 24px;">China</option>
+            <option value="United States" id="United States" style="font-size: 24px;">United States</option>
+            <option value="Russia" id="Russia" style="font-size: 24px;">Russia</option>
+            <option value="Other" id="Other" style="font-size: 24px;">Other</option>
           </select>
         </td>
       </tr>
       <tr>
         <td>
 
-          <input onclick="myButtonReset()" type="button" value="Reset" class="label">
+          <input onclick="myButtonReset()" type="button" value="Reset" class="labelbtnReset">
 
         </td>
         <td>
 
-          <input onclick="myButtonSubmit()" type="button" value="Submit" class="label">
+          <input onclick="myButtonSubmit()" type="button" value="Submit" class="labelbtnSubmit">
 
         </td>
       </tr>
