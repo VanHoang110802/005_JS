@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="test.js">
+    <link rel="stylesheet" href="style/style1.css">
+    <link rel="stylesheet" href="style/buoi13.css">
+    <title>FORM ĐĂNG KÝ THÔNG TIN</title>
+</head>
+
+<body onload="alert('Chào mừng bạn đến với trang đặt vé')">
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <div class="logo-header">
+                <a href="index.html" onclick="alert('Xin chờ 1 chút ahihi...')">
+                    <img src="./img/logo-white.png" alt="">
+
+                </a>
+            </div>
+            <div class="menu-right">
+                <ul class="header-menu">
+                    <li><a href="index.html" onclick="alert('Xin chờ 1 chút ahihi...')">LOG OUT</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- header ends -->
+
+        <!-- slider -->
+
+        <div class="slider1">
+
+            <form action="#" style="margin-right: -50%; margin-top: 100px;">
+                <h1 style="text-align: center; color: white;">ĐẶT VÉ</h1>
+                <table style="margin: auto; background-color: aliceblue;" border="3">
+                    <tr>
+
+                        <td> <label for="" class="label" style="font-size: 16px;"> Nhập vào họ tên: <br> </label> <span
+                                class="thongBaoName"> </span> </td>
+
+                        <td> <input type="text" name="name" value="" id="register_name" class="labelInput"
+                                style="font-size: 24px;" /> <span class="label"></span> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><label for="" class="label"> Nhập vào số điện thoại: <br> </label> <span
+                                class="thongBaoSDT"></span> </td>
+
+                        <td><input type="text" name="number" id="register_number" class="labelInput"
+                                style="font-size: 24px;" /> <br> <span class="label"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="register_cmt" class="label"> Nhập vào chứng minh thư: <br> </label> <span
+                                class="thongBaoCMT"></span> </td>
+                        <td><input type="text" name="cmt" value="" id="register_cmt" class="labelInput"
+                                style="font-size: 24px;" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="register_email" class="label"> Nhập vào Email: <br> </label> <span
+                                class="thongBaoEmail"></span> </td>
+                        <td><input type="email" name="email" value="" id="register_email" class="labelInput"
+                                style="font-size: 24px;" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="register_chuyenBay" class="labelChuyenBay"> Vui lòng chọn chuyến bay: <br>
+                            </label> <span class="thongBaoChuyenBay"></span> </td>
+                        <td>
+                            <select name="chuyenBay" id="register_chuyenBay" class="luaChonChuyenBay"
+                                style="font-size: 20px;">
+                                <option value="" id="">---------------------- Lựa chọn ----------------------</option>
+                                <option value="Tp. Hồ Chí Minh - SGN - Sân bay Tân Sơn Nhất" id="1"
+                                    style="font-size: 24px;">Tp. Hồ Chí Minh - SGN - Sân bay Tân Sơn Nhất</option>
+                                <option value="Hà Nội - HAN - Sân bay Nội Bài" id="2" style="font-size: 24px;">Hà Nội -
+                                    HAN
+                                    - Sân bay Nội Bài</option>
+                                <option value="Buôn Ma Thuột - BMV - Sây bay Buôn Ma Thuột" id="3"
+                                    style="font-size: 24px;">
+                                    Buôn Ma Thuột - BMV - Sây bay Buôn Ma Thuột</option>
+                                <option value="Cần Thơ - VCA - Sân bay Trà Nóc" id="4">Cần Thơ - VCA - Sân bay Trà Nóc
+                                </option>
+                                <option value="Chu Lai - VCL - Sân bay Chu Lai" id="5">Chu Lai - VCL - Sân bay Chu Lai
+                                </option>
+                                <option value="Đà Lạt - DLI - Sân bay Liên Khương" id="6">Đà Lạt - DLI - Sân bay Liên
+                                    Khương
+                                </option>
+                                <option value="Đà Nẵng - DAD - Sân bay Đà Nẵng" id="7">Đà Nẵng - DAD - Sân bay Đà Nẵng
+                                </option>
+                                <option value="Đồng Hới - VDH - Sân bay Đồng Hới" id="8">Đồng Hới - VDH - Sân bay Đồng
+                                    Hới
+                                </option>
+                                <option value="Hải Phòng - HPH - Sân bay Cát Bi" id="9">Hải Phòng - HPH - Sân bay Cát Bi
+                                </option>
+                                <option value="Huế - HUI - Sân bay Phú Bài" id="10">Huế - HUI - Sân bay Phú Bài</option>
+                                <option value="Nha Trang - CXR - Sân bay Cam Ranh" id="11">Nha Trang - CXR - Sân bay Cam
+                                    Ranh</option>
+                                <option value="Phú Quốc - PQC - Sân bay Phú Quốc" id="12">Phú Quốc - PQC - Sân bay Phú
+                                    Quốc
+                                </option>
+
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="register_ngaySinh" class="label"> Ngày tháng năm sinh: <br> </label> <span
+                                class="thongBaoNTN"></span> </td>
+                        <td><input type="date" name="ngaySinh" value="" id="register_ngaySinh" class="labelInput"
+                                style="font-size: 20px;" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="register_hanhLy" class="label"> Hành lý: <br> </label> <span
+                                class="thongBaoHanhLy"></span></td>
+                        <td><input type="text" name="hanhLy" value="" id="register_hanhLy" class="labelInput"
+                                style="font-size: 24px;" /></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><label for="register_gender" class="labelInput"> Giới tính: <br> </label> <span
+                                class="thongBaoGioiTinh"></span> </td>
+                        <td>
+                            <input type="radio" name="gender" id="register_gendermale" value="nam" class="inputSex" />
+                            <label for="register_gendermale">nam</label>
+                            <input type="radio" name="gender" id="register_genderfemale" value="nữ" class="inputSex1" />
+                            <label for="register_genderfemale">nữ</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="register_ThanhToan" class="labelThanhToan"> Chọn hình thức thanh toán: <br>
+                            </label> <span class="thongBaoThanhToan"></span> </td>
+                        <td>
+                            <select name="thanhToan" id="register_ThanhToan" class="luaChonThanhToan"
+                                style="font-size: 20px;">
+                                <option value="" id="" style="font-size: 20px;">---------------------- Lựa chọn
+                                    ----------------------</option>
+                                <option value="Chuyen khoan" id="Vietnam" style="font-size: 24px;">Chuyển khoản</option>
+                                <option value="Thanh toan truc tiep" id="China" style="font-size: 24px;">Thanh toán trực
+                                    tiếp</option>
+                                <option value="Quet QR code" id="United States" style="font-size: 24px;">Quét QR code
+                                </option>
+                                <option value="Other" id="Other" style="font-size: 24px;">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input onclick="myButtonReset()" type="button" value="Reset" class="labelbtnReset"
+                                style="font-size: 24px;">
+
+                        </td>
+                        <td>
+
+                            <input onclick="myButtonSubmit()" type="button" value="Submit" class="labelbtnSubmit"
+                                style="font-size: 24px;">
+                               
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+            <br>
+            <td>
+                <table style="margin-top: 20px; margin-left: 75px; background-color: aliceblue;" id="ketqua"></table>
+            </td>
+
+        </div>
+</body>
+
+<script src="js/buoi13.js"></script>
+<script src="js/aler.js"></script>
+</html>
