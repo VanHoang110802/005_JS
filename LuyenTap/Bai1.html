@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bai1.css">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    
+        <div class="mySlide">
+            <img src="image/image_1.jpg" alt="">
+            <div>1 / 3</div>
+        </div>
+        
+        <div class="mySlide">
+            <img src="image/image_2.jpg" alt="">
+            <div>2 / 3</div>
+        </div>
+        
+        <div class="mySlide">
+            <img src="image/image_3.jpg" alt="">
+            <div>3 / 3</div>
+        </div>
+        
+        <button onclick="nextSlide(-1)">Pre</button>
+        <button onclick="nextSlide(1)">Next</button>
+        <button onclick="autoSlide()">Auto</button>
+        <button onclick="stopSlide()">Stop</button>
+
+
+    <form action="">
+        <table style="margin: auto;" border="3">
+            <tr>
+                <td>
+                    <h1 class="textDangKi"> ĐĂNG KÍ THÔNG TIN </h1>
+
+                    <label class="labelText"> Nhập vào họ tên </label>
+                    <input type="text" value="" class="inputName" /> <br> <span class="thongBaoName"> </span>
+                    <br>
+
+                    <label class="labelText"> Nhập vào Email </label>
+                    <input type="email" value="" class="inputEmail" /> <br> <span class="thongBaoEmail"></span>
+                    <br>
+
+                    <label class="labelText"> Nhập vào số điện thoại </label>
+                    <input type="text" value="" class="inputSDT" /><br> <span class="thongBaoSDT"> </span>
+                    <br>
+
+                    <label class="labelText"> Khóa học: </label>
+                    <select id="" class="luaChonKhoaHoc" onchange="timHocPhi()">
+                        <option value="" id="">----Chọn----</option>
+                        <option value="Khóa HTML" id="1">Khóa HTML</option>
+                        <option value="Khóa JS" id="2">Khóa JS</option>
+                        <option value="Khóa PHP" id="3">Khóa PHP</option>
+                    </select>
+                    <br> <span class="thongBaoKhoaHoc"></span>
+                    <br>
+
+                    <label class="labelText"> Học phí: </label>
+                    <input type="text" value="" id="register_HocPhi" class="inputHP" readonly="readonly" /><br> <span class="thongBaoHocPhi"></span>
+                    <br>
+
+                    <label class="labelText"> Hình thức học: </label>
+                    <input type="radio" name="gender" value="Tại trường" class="inputHinhThuc" style="font-size: 20px;" />
+                    <label>Tại trường</label>
+                    <input type="radio" name="gender" value="Học Online" style="font-size: 20px;" />
+                    <label>Học Online</label>
+                    <br> <span class="thongBaoHinhThucHoc"></span>
+                    <br>
+                    <br>
+
+                    <input onclick="myButtonSubmit()" type="button" value="Submit" class="inputSubmit"> 
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script src="Bai1.js"></script>
+
+</html>
