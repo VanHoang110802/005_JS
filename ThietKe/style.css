@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: black;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    /*Tao thanh ngang gach chan cho cac nut nhan chuc nang*/
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0px;
+    bottom: -6px;
+
+    /*tam an thanh di*/
+    transform: scale(0);
+    transition: transform 0.3s;
+}
+
+.navigation a:hover::after {
+    /*Di chuyen con tro chuot vao cac nut nhan chuc nang se hien ra thanh gach chan ben duoi*/
+    transform: scale(1);
+    /*hien thi cai thanh len*/
+}
+
+.navigation .btnLogin {
+    /*Tao nhung tinh chat cho cac nut nhan chuc nang*/
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.4s;
+}
+
+.navigation .btnLogin:hover {
+    /*Di chuyen con tro chuot vao nut Login*/
+    background: white;
+    color: black;
+}
+
+/*Tao khung dang nhap*/
+.warpper {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.warpper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+/*close*/
+.warpper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: black;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+/*can login ra giua*/
+.form-box h2 {
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+/*Tao thanh ngan cach giua cac khung nhap*/
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input-box1 label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.input-box1 .input_sex_1 {
+    margin-left: 100px;
+}
+
+.input-box1 .input_sex_2 {
+    margin-left: 50px;
+}
+
+.input-box1 .input_file {
+    margin-left: 100px;
+}
+
+.input-box1 .input_Single {
+    margin-left: 100px;
+}
+
+.input-box1 .input_Married {
+    margin-left: 20px;
+}
+
+.input-box1 .input_Gay {
+    margin-left: 20px;
+}
+
+.input-box1 .input_Less {
+    margin-left: 20px;
+}
+
+
+/* Loai bo cai khung trang di*/
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/*Khi nhan vao khung dang nhap se day cai ten label len*/
+.input-box input:focus~label, .input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    padding: 0 35px 0 5px;
+}
+
+textarea {
+    margin-left: 100px;
+}
+/*Can chinh la cho forgot & remember*/
+.remeber-forgot {
+    font-size: 0.9em;
+    color: black;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tuy chinh nut login */
+.btnSubmit {
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
